@@ -1,6 +1,7 @@
 window.addEventListener('load', function(){
 
   const pullDownButton = document.getElementById("lists")
+  const pullDownParents = document.getElementById("pull-down")
 
   pullDownButton.addEventListener('mouseover', function(){
     pullDownButton.setAttribute("style", "background-color:#FFBEDA;")
@@ -13,6 +14,6 @@ window.addEventListener('load', function(){
 
 
   pullDownButton.addEventListener('click', function(){
-    console.log("click OK")
+    pullDownParents.setAttribute("style", "display:block;")
   })
 })
